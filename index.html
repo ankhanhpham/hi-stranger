@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Me Trying To Be Creative</title>
+	<style>
+		body {
+			background-color: #FEDCD2;
+			font-family: 'Comic Sans MS', cursive, sans-serif;
+			text-align: center;
+		}
+		h1 {
+			color: #E01A4F;
+			font-size: 48px;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+		p {
+			color: #E01A4F;
+			font-size: 24px;
+			margin-top: 20px;
+			margin-bottom: 50px;
+		}
+		button {
+			background-color: #E01A4F;
+			border: none;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 20px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+		button:nth-of-type(2) {
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Hi Steven</h1>
+	<p>You are single, I am single, do you know what it means?</p>
+	<div id="message">
+		<button onclick="showMessage()">Click for a Surprise!</button>
+	</div>
+	<div id="message2" style="display:none;">
+		<p>nobody wants us</p>
+		<button onclick="showMessage2()">But</button>
+	</div>
+	<div id="message3" style="display:none;">
+		<p>I want you, rawr</p>
+		<button onclick="showMessage3()">because</button>
+	</div>
+	<div id="message4" style="display:none;">
+		<p> You are cute as fuck!</p>
+		<button onclick="showMessage4()">Click for another surprise!</button>
+	</div>
+
+	<script>
+		function showMessage() {
+			document.getElementById("message").style.display = "none";
+			document.getElementById("message2").style.display = "block";
+            
+		}
+
+		function showMessage2() {
+			document.getElementById("message2").style.display = "none";
+			document.getElementById("message3").style.display = "block";
+            document.getElementsByTagName("p")[1].style.display = "none";
+		}
+
+		function showMessage3() {
+			document.getElementById("message3").style.display = "none";
+			document.getElementById("message4").style.display = "block";
+		}
+
+		function showMessage4() {
+			document.getElementById("message4").style.display = "none";
+			alert("Lemme take you out ❤️");
+		}
+	</script
+</body>
+</html>
